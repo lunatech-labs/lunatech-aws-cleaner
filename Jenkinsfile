@@ -8,9 +8,8 @@ pipeline {
     stages {
 	stage('build') {
 	    steps {
-		sh('store_credentials.sh')
 		sh('edit_conf.sh')
-		sh('aws-nuke -c config/default.yaml --profile default')
+		sh('lunatech-devops-training | aws-nuke -c config/default.yaml --profile default')
 	    }
 	}
     }
