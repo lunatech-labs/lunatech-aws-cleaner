@@ -34,6 +34,6 @@ presets:
     filters:
     
 accounts:
-  801771690413: #lunatech-devops-training
+  ACCOUNT_ID: #lunatech-devops-training
     presets:
       - "do-not-delete"

@@ -10,6 +10,7 @@ pipeline {
 	    steps {
 		sh('store_credentials.sh')
 		sh('edit_conf.sh')
+		sh('aws-nuke -c config/default.yaml --profile default')
 	    }
 	}
     }
