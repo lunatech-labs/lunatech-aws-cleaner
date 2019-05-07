@@ -1,0 +1,39 @@
+---
+regions:
+- global
+- eu-west-1
+
+account-blacklist:
+- 1234567890 #production account
+
+resource-types:
+  excludes:
+    - IAMGroup
+    - IAMGroupPolicy
+    - IAMGroupPolicyAttachment
+    - IAMInstanceProfile
+    - IAMInstanceProfileRole
+    - IAMLoginProfile
+    - IAMOpenIDConnectProvider
+    - IAMPolicy
+    - IAMRole
+    - IAMRolePolicy
+    - IAMRolePolicyAttachment
+    - IAMSAMLProvider
+    - IAMServerCertificate
+    - IAMServiceSpecificCredential
+    - IAMUser
+    - IAMUserAccessKey
+    - IAMUserGroupAttachment
+    - IAMUserPolicy
+    - IAMUserPolicyAttachment
+
+presets:
+  do-not-delete: # please add your resource in that preset if you need to keep it!
+  ## please refer to the official documentation: https://github.com/rebuy-de/aws-nuke
+    filters:
+    
+accounts:
+  801771690413: #lunatech-devops-training
+    presets:
+      - "do-not-delete"
