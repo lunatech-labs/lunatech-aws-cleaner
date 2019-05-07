@@ -9,7 +9,7 @@ pipeline {
 	stage('build') {
 	    steps {
 		sh('edit_conf.sh')
-		sh('lunatech-devops-training | aws-nuke -c config/default.yaml --profile default')
+		sh('(echo lunatech-devops-training; sleep 10; echo lunatech-devops-training) | aws-nuke -c config/default.yaml --profile default')
 	    }
 	}
     }
