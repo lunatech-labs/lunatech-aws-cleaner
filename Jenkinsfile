@@ -6,7 +6,7 @@ pipeline {
 	TRAINING_ID = '801771690413'
     }
     stages {
-	stage('preparation') {
+	stage('build') {
 	    steps {
 		sh('store_credentials.sh')
 		sh('edit_conf.sh')
