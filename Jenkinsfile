@@ -11,13 +11,7 @@ pipeline {
 	    steps {
 		withCredentials([($class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'Lunatech Devops Training credentials')]) {
 		    sh('edit_conf.sh')
-		}
-	    }
-	}
-	stage('run') {
-	    steps {
-		withCredentials([($class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'Lunatech Devops Training credentials')]) {
-		    sh("(echo $ACCOUNT_ALIAS; sleep 10; echo $ACCOUNT_ALIAS | aws-nuke -c config/default.yaml --profile default")		    
+		    sh("(echo $ACCOUNT_ALIAS; sleep 10; echo $ACCOUNT_ALIAS | aws-nuke -c config/default.yaml --profile default") 
 		}
 	    }
 	}
