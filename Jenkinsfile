@@ -1,6 +1,6 @@
 pipeline {
     agent {
-	dockerfile true
+	docker { image "ilselott/aws_cleaner" }
     }
     environment {
 	TRAINING_ID = '801771690413'
