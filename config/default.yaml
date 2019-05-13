@@ -32,6 +32,9 @@ presets:
   do-not-delete: # please add your resource in that preset if you need to keep it!
   ## please refer to the official documentation: https://github.com/rebuy-de/aws-nuke
     filters:
+      S3Bucket:
+        - type: glob
+          value: "s3://lunadevops-tfstates"
     
 accounts:
   801771690413: #lunatech-devops-training
