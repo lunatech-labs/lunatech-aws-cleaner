@@ -34,7 +34,7 @@ presets:
     filters:
       S3Bucket:
         - type: glob
-          value: "s3://lunadevops-tfstates"
+          value: "s3://*tfstates*"
     
 accounts:
   801771690413: #lunatech-devops-training
