@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('prep') {
             steps {
-                cleanWs()
+                //cleanWs()
             }
         }
 	stage('configure') {
