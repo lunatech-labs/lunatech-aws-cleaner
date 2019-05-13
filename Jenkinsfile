@@ -5,11 +5,6 @@ pipeline {
 	ACCOUNT_ALIAS = 'lunatech-devops-training'
     }
     stages {
-        stage('prep') {
-            steps {
-                //cleanWs()
-            }
-        }
 	stage('configure') {
 	    steps {
 	        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'Lunatech Devops Training credentials']]) {
