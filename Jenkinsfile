@@ -15,7 +15,7 @@ pipeline {
 	        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'Lunatech Devops Training credentials']]) {
 	            sh("docker pull lunatechlabs/aws-nuke")
 		    sh("pwd")
-    		    sh ("echo $ACCOUNT_ALIAS |docker run -i --mount type=bind,src=/var/lib/jenkins/workspace/aws-resources-cleanerconfig/default.yaml,dst=/src/def.yaml lunatechlabs/aws-nuke:latest -c /src/def.yaml --access-key-id $AWS_ACCESS_KEY_ID --secret-access-key $AWS_SECRET_ACCESS_KEY")
+    		    sh ("echo $ACCOUNT_ALIAS |docker run -i --mount type=bind,src=/var/lib/jenkins/workspace/aws-resources-cleaner/config/default.yaml,dst=/src/def.yaml lunatechlabs/aws-nuke:latest -c /src/def.yaml --access-key-id $AWS_ACCESS_KEY_ID --secret-access-key $AWS_SECRET_ACCESS_KEY")
 		}
 	    }
 	}
