@@ -28,4 +28,4 @@ filters:
 ```
 
 
-For an extended amount of information, please refer to the official tool's [README](https://github.com/rebuy-de/aws-nuke/blob/master/README.md)
+For an extended amount of information, please refer to the official tool's [README](https://github.com/rebuy-de/aws-nuke/blob/master/README.md#filtering-resources)
