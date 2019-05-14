@@ -1,5 +1,5 @@
 # LunatechLabs AWS Cleaner
-It cleans the AWS account every night around 9PM!
+It cleans the AWS account every night around 3AM!
 
 based on the [AWS Nuke](https://github.com/rebuy-de/aws-nuke) tool from Rebuy-de, but implemented with a jenkins file so you can run it nightly!
 
