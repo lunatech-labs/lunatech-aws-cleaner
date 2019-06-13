@@ -55,9 +55,7 @@ presets:
         - "s3://lunadevops-tfstates"
       CloudWatchAlarm:
         - "BillingAlarm"
-      EC2VPC:
-        - "vpc-084fad01fb28a39a7"
-    
+        
 accounts:
   801771690413: #lunatech-devops-training
     presets:
