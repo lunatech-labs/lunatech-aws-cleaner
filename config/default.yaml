@@ -55,8 +55,8 @@ presets:
         - "s3://lunadevops-tfstates"
       CloudWatchAlarm:
         - "BillingAlarm"
-      DefaultVpc:
-        - "vpc-0ec32a45a820a81ec"
+      EC2VPC:
+        - "vpc-084fad01fb28a39a7"
     
 accounts:
   801771690413: #lunatech-devops-training
