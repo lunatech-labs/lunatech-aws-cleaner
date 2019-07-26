@@ -55,7 +55,19 @@ presets:
         - "s3://lunadevops-tfstates"
       CloudWatchAlarm:
         - "BillingAlarm"
-        
+      EC2Vpc:
+        - "vpc-05f71acd2759c5da6"
+      EC2Subnet:
+        - "subnet-04429de99f64fa86f"
+        - "subnet-02234b8fb452b1bec"
+        - "subnet-0f476cbcfe9cd2179"
+      EC2RouteTable:
+        - "rtb-03c4bcea463869fd0"
+      EC2InternetGateway:
+        - "igw-06d4ff3a7c8fa4961"
+      EC2DHCPOption:
+        - "dopt-0bcf2378e1525c9aa"
+      
 accounts:
   801771690413: #lunatech-devops-training
     presets:
