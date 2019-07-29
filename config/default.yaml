@@ -55,7 +55,7 @@ presets:
         - "s3://lunadevops-tfstates"
       CloudWatchAlarm:
         - "BillingAlarm"
-      EC2Vpc:
+      EC2VPC:
         - "vpc-05f71acd2759c5da6"
       EC2Subnet:
         - "subnet-04429de99f64fa86f"
