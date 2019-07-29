@@ -67,6 +67,8 @@ presets:
         - "igw-06d4ff3a7c8fa4961"
       EC2DHCPOption:
         - "dopt-0bcf2378e1525c9aa"
+      EC2InternetGatewayAttachment:
+        - "igw-06d4ff3a7c8fa4961 -> vpc-05f71acd2759c5da6"
       
 accounts:
   801771690413: #lunatech-devops-training
