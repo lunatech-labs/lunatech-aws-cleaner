@@ -47,6 +47,7 @@ resource-types:
     - IAMUserGroupAttachment
     - IAMUserPolicy
     - IAMUserPolicyAttachment
+    - Route53HostedZone
 
 presets:
   do-not-delete: # please add your resource in that preset if you need to keep it! Please refer to the official documentation: https://github.com/rebuy-de/aws-nuke
